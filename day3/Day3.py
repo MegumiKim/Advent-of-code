@@ -3,12 +3,12 @@
 # and following a slope of right 3 and down 1, 
 # how many trees would you encounter?
 
-with open('/Users/megumi/Desktop/Python/Advent/day3/input') as file:
+with open('./input') as file:
     lines = file.read().splitlines()
 
     tree_counts = 0 
-y = 0 #vertical cordinate
-x = 0 #horizontal cordinate
+y = 0 #vertical coordinate
+x = 0 #horizontal coordinate
 
 while y < len(lines)-1:
     x = (x+3)%(len(lines[0]))
@@ -25,8 +25,8 @@ print("Part1:", tree_counts)
 
 def slopes(right,down):
     tree_counts = 0 
-    y = 0 #vertical cordinate
-    x = 0 #horizontal cordinate
+    y = 0 #vertical coordinate
+    x = 0 #horizontal coordinate
 
     while y < len(lines)-1:
         x = (x+right)%(len(lines[0]))
